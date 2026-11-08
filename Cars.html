@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl" xml:lang="ar" lang="ar">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>السيارات - مكتب تأجير السيارات</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- استدعاء jQuery عبر الإنترنت لضمان عملها فوراً دون مشاكل في المجلدات -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="myFunctions.js"></script>
+</head>
+<body>
+    <div id="page">
+
+        <div id="header">
+            <h1>مكتب الأفق لتأجير السيارات</h1>
+        </div>
+
+        <div id="menu">
+            <a href="home.html">الرئيسية</a>
+            <a href="Aboutus.html">من نحن</a>
+            <a href="Cars.html" class="active">السيارات</a>
+        </div>
+
+        <h2>السيارات المتوفرة للتأجير</h2>
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>الرمز</th>
+                    <th>الصورة</th>
+                    <th>الموديل</th>
+                    <th>سنة الصنع</th>
+                    <th>السعر اليومي</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CR-001</td>
+                    <td><img src="images/corolla.png" alt="Toyota Corolla" /></td>
+                    <td id="model1">Toyota Corolla</td>
+                    <td>2023</td>
+                    <td id="price1">250000 ليرة سورية</td>
+                    <td><input type="checkbox" class="showDetails" value="details1" /></td>
+                    <td><input type="checkbox" id="select1" name="selectCar" value="CR-001" /></td>
+                </tr>
+                <tr id="details1" class="details">
+                    <td colspan="7">
+                        <strong>نوع الوقود:</strong> بنزين<br />
+                        <strong>ناقل الحركة:</strong> أوتوماتيك<br />
+                        <strong>عدد المقاعد:</strong> 5<br />
+                        <strong>عداد الكيلومترات:</strong> 45000 كم<br />
+                        <strong>اللون:</strong> أبيض
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CR-002</td>
+                    <td><img src="images/sportage.png" alt="Kia Sportage" /></td>
+                    <td id="model2">Kia Sportage</td>
+                    <td>2022</td>
+                    <td id="price2">400000 ليرة سورية</td>
+                    <td><input type="checkbox" class="showDetails" value="details2" /></td>
+                    <td><input type="checkbox" id="select2" name="selectCar" value="CR-002" /></td>
+                </tr>
+                <tr id="details2" class="details">
+                    <td colspan="7">
+                        <strong>نوع الوقود:</strong> بنزين<br />
+                        <strong>ناقل الحركة:</strong> أوتوماتيك<br />
+                        <strong>عدد المقاعد:</strong> 5<br />
+                        <strong>عداد الكيلومترات:</strong> 60000 كم<br />
+                        <strong>اللون:</strong> رمادي
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CR-003</td>
+                    <td><img src="images/elantra.png" alt="Hyundai Elantra" /></td>
+                    <td id="model3">Hyundai Elantra</td>
+                    <td>2024</td>
+                    <td id="price3">300000 ليرة سورية</td>
+                    <td><input type="checkbox" class="showDetails" value="details3" /></td>
+                    <td><input type="checkbox" id="select3" name="selectCar" value="CR-003" /></td>
+                </tr>
+                <tr id="details3" class="details">
+                    <td colspan="7">
+                        <strong>نوع الوقود:</strong> بنزين<br />
+                        <strong>ناقل الحركة:</strong> أوتوماتيك<br />
+                        <strong>عدد المقاعد:</strong> 5<br />
+                        <strong>عداد الكيلومترات:</strong> 20000 كم<br />
+                        <strong>اللون:</strong> أسود
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CR-004</td>
+                    <td><img src="images/spark.png" alt="Chevrolet Spark" /></td>
+                    <td id="model4">Chevrolet Spark</td>
+                    <td>2021</td>
+                    <td id="price4">180000 ليرة سورية</td>
+                    <td><input type="checkbox" class="showDetails" value="details4" /></td>
+                    <td><input type="checkbox" id="select4" name="selectCar" value="CR-004" /></td>
+                </tr>
+                <tr id="details4" class="details">
+                    <td colspan="7">
+                        <strong>نوع الوقود:</strong> بنزين<br />
+                        <strong>ناقل الحركة:</strong> يدوي<br />
+                        <strong>عدد المقاعد:</strong> 4<br />
+                        <strong>عداد الكيلومترات:</strong> 85000 كم<br />
+                        <strong>اللون:</strong> أحمر
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>CR-005</td>
+                    <td><img src="images/sunny.png" alt="Nissan Sunny" /></td>
+                    <td id="model5">Nissan Sunny</td>
+                    <td>2020</td>
+                    <td id="price5">220000 ليرة سورية</td>
+                    <td><input type="checkbox" class="showDetails" value="details5" /></td>
+                    <td><input type="checkbox" id="select5" name="selectCar" value="CR-005" /></td>
+                </tr>
+                <tr id="details5" class="details">
+                    <td colspan="7">
+                        <strong>نوع الوقود:</strong> بنزين<br />
+                        <strong>ناقل الحركة:</strong> يدوي<br />
+                        <strong>عدد المقاعد:</strong> 5<br />
+                        <strong>عداد الكيلومترات:</strong> 110000 كم<br />
+                        <strong>اللون:</strong> فضي
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><input type="button" id="continueBtn" value="متابعة" /></p>
+
+        <!-- نموذج طلب الحجز المتقدم -->
+        <form id="bookingForm" action="" method="get" onsubmit="return validateForm();">
+
+            <fieldset>
+                <legend>بيانات مقدم الطلب</legend>
+                <p>
+                    <label for="fullName">الاسم الكامل:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="أحرف عربية فقط" />
+                </p>
+                <p>
+                    <label for="nationalId">الرقم الوطني (*):</label>
+                    <input type="text" id="nationalId" name="nationalId" placeholder="11 خانة" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>مدة التأجير</legend>
+                <p>
+                    <label for="startDate">تاريخ البداية (*):</label>
+                    <input type="text" id="startDate" name="startDate" placeholder="yyyy-mm-dd" />
+                </p>
+                <p>
+                    <label for="endDate">تاريخ النهاية (*):</label>
+                    <input type="text" id="endDate" name="endDate" placeholder="yyyy-mm-dd" />
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>بيانات التواصل</legend>
+                <p>
+                    <label for="mobile">رقم الموبايل:</label>
+                    <input type="text" id="mobile" name="mobile" placeholder="09xxxxxxxx" />
+                </p>
+                <p>
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="name@example.com" />
+                </p>
+            </fieldset>
+
+            <div class="total-box">
+                التكلفة الإجمالية: <span id="totalPriceDisplay">0 ليرة سورية</span>
+            </div>
+
+            <p style="color: red; font-size: 13px;">الحقول المعلَّمة بـ (*) إلزامية.</p>
+            <p><input type="submit" value="إرسال" /></p>
+
+        </form>
+
+    </div>
+</body>
+</html>
